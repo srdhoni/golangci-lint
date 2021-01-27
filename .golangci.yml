@@ -142,6 +142,7 @@ issues:
     - path: pkg/golinters/scopelint.go
       text: 'directive `//nolint:interfacer` is unused for linter interfacer'
 
+
 run:
   skip-dirs:
     - test/testdata_etc
