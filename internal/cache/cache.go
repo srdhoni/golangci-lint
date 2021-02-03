@@ -8,6 +8,7 @@
 // cmd/go/internal/cache package.
 package cache
 
+
 import (
 	"bytes"
 	"crypto/sha256"
