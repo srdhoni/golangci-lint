@@ -1,4 +1,9 @@
 linters-settings:
+  custom:
+    tokolinter:
+      path: ./tokolinter.so
+      description: tokopedia private linter
+      original-url: github.com/tokopedia/mitralib/tree/master/go/tokolinter
   depguard:
     list-type: blacklist
     packages:
@@ -67,10 +72,7 @@ linters:
   # inverted configuration with `enable-all` and `disable` is not scalable during updates of golangci-lint
   disable-all: true
   enable:
-    - noparamreassign
-    - interfacesuffixer
-    - missingfuncdoc
-    - idmustbigint
+    - tokolinter
     - bodyclose
     - deadcode
     - depguard
