@@ -14,6 +14,7 @@ import (
 	"sync"
 )
 
+
 var debugHash = false // set when GODEBUG=gocachehash=1
 
 // HashSize is the number of bytes in a hash.
