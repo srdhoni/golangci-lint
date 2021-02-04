@@ -1,7 +1,7 @@
 linters-settings:
   custom:
     tokolinter:
-      path: ./tokolinter.so
+      path: /var/lib/tokolinter.so
       description: tokopedia private linter
       original-url: github.com/tokopedia/mitralib/tree/master/go/tokolinter
   depguard:
