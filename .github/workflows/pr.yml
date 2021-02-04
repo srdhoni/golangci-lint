@@ -33,29 +33,6 @@ jobs:
         uses: golangci/golangci-lint-action@v2.3.0
         with:
           version: latest
-  tests-on-windows:
-    needs: golangci-lint # run after golangci-lint action to not produce duplicated errors
-    runs-on: windows-latest
-    steps:
-      - uses: actions/checkout@v2
-      - name: Install Go
-        uses: actions/setup-go@v2
-        with:
-          go-version: 1.15 # test only the latest go version to speed up CI
-      - name: Run tests
-        run: make.exe test
-        continue-on-error: true
-  tests-on-macos:
-    needs: golangci-lint # run after golangci-lint action to not produce duplicated errors
-    runs-on: macos-latest
-    steps:
-      - uses: actions/checkout@v2
-      - name: Install Go
-        uses: actions/setup-go@v2
-        with:
-          go-version: 1.15 # test only the latest go version to speed up CI
-      - name: Run tests
-        run: make test
   tests-on-unix:
     needs: golangci-lint # run after golangci-lint action to not produce duplicated errors
     runs-on: ubuntu-latest
