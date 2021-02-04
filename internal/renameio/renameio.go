@@ -16,6 +16,7 @@ import (
 	"github.com/golangci/golangci-lint/internal/robustio"
 )
 
+
 const patternSuffix = ".tmp"
 
 // Pattern returns a glob pattern that matches the unrenamed temporary files
